@@ -1,0 +1,135 @@
+@media screen and (max-width: 1280px){
+  .container{
+    width: 960px;
+  }
+  .home__text{
+    color: #1d1d1d;
+  }
+  .skills__img{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .container{
+    width: 720px;
+  }
+  .home .container{
+    justify-content: center;
+  }
+  .service__text{
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 550px;
+  }
+  .burger{
+    display: block;
+  }
+  .menu{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 81px;
+    width: 250px;
+    transform: translateY(-150%);
+    transition: 0.5s;
+  }
+  .menu-active{
+    transform: translateY(0);
+  }
+  .menu__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__list-item{
+    margin: 20px 0;
+    & + .menu__list-item{
+      margin-left: 0;
+    }
+  }
+  .skills__inner{
+    width: 100%;
+  }
+  .skills__img{
+    display: none;
+  }
+  .footer__menu{
+    display: none;
+  }
+  .count__inner{
+    flex-wrap: wrap;
+  }
+  .count__item{
+    width: 50%;
+    &:nth-of-type(-n+2){
+      margin-bottom: 40px;
+    }
+  }
+  .count__item-num{
+    font-size: 25px;
+  }
+  .work__item{
+    width: 50%;
+  }
+  .service__item{
+    width: 50%;
+  }
+  .partners{
+    display: none;
+  }
+  .contact__form-input{
+    width: 260px;
+  }
+  .contact__form-input__title{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    width: 420px;
+  }
+  .home__title{
+    font-size: 33px;
+  }
+  .home::after{
+    width: 100%;
+  }
+  .contact__form-input{
+    width: 100%;
+  }
+  .contact__form-input:nth-of-type(1){
+    margin-right: 0;
+  }
+  .footer__social{
+    display: none;
+  }
+  .process__inner{
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    width: 320px;
+  }
+  .process__inner{
+    height: 320px;
+  }
+  .service__text{
+    width: 150px;
+  }
+  .count__item{
+    width: 40%;
+  }
+  .footer__inner{
+    flex-wrap: wrap;
+  }
+  .footer__copy{
+    margin-bottom: 40px;
+  }
+}
